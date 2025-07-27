@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong-Ping (by Tushxrb)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pong - Ping</h1>
+    <div class="scoreboard">
+        <div class="score">
+            <span>Player</span>
+            <span id="playerScore">0</span>
+            <span>:</span>
+            <span id="aiScore">0</span>
+            <span>AI</span>
+        </div>
+        <div class="highscores">
+            <span>High Scores</span>
+            <ol id="highScores">
+                <li>0 - 0</li>
+                <li>0 - 0</li>
+                <li>0 - 0</li>
+            </ol>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="pauseBtn">⏸ Pause</button>
+        <button id="restartBtn">⟳ Restart</button>
+        <button id="manualBtn">❓ Manual</button>
+    </div>
+    <div class="canvas-container">
+        <canvas id="pong"></canvas>
+    </div>
+    <div class="manual-modal" id="manualModal">
+        <div class="manual-content">
+            <span id="closeManual" class="close">&times;</span>
+            <h2>How to Play Pong</h2>
+            <ul>
+                <li><b>Move Paddle:</b> Move your mouse up/down on the left to control your paddle.</li>
+                <li><b>Pause/Unpause:</b> Press the <b>Spacebar</b> or click <b>Pause</b> button.</li>
+                <li><b>Restart:</b> Click <b>Restart</b> to reset scores and the game.</li>
+                <li><b>Goal:</b> Try to bounce the ball past the AI paddle on the right!</li>
+                <li><b>High Scores:</b> Top 3 Player-AI scores are tracked.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        by Tushxrb
+    </footer>
+    <script src="game.js"></script>
+</body>
+</html>
